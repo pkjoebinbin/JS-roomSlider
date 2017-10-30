@@ -14,8 +14,21 @@
 		
 		width:520px;
 		height:280px;
-		margin:0 auto;
+		
 	}
+
+
+
+	#ttt{
+		
+		width:520px;
+		height:280px;
+		margin-top:200px;
+		
+	}
+
+
+
 	
 	
 	
@@ -64,17 +77,31 @@
 	
 </style>
 <body>
-<div id="slide" class="slide">
+<div id="slide" >
 	
-	<div id="room" class="room">
+	<div>
 		<img src="1.jpg" id="test" alt="">
 		<img src="2.jpg" alt="">
 		<img src="3.jpg" alt="">
 		<img src="4.jpg" alt="">
 		<img src="5.jpg" alt="">
+		
+	</div>
+
+
+</div>
+
+
+
+<div id="ttt" class="slide">
+	
+	<div  class="room">
+		<img src="1.jpg" id="test" alt="">
+		<img src="2.jpg" alt="">
+		<img src="3.jpg" alt="">
+		<img src="4.jpg" alt="">
 		<img src="5.jpg" alt="">
-		<img src="5.jpg" alt="">
-		<img src="5.jpg" alt="">
+		
 	</div>
 
 
@@ -85,15 +112,35 @@
 
 
 
+
+
+
+
+
+
+
+
 	
 
 	
 </body>
-<script src="demo.js"></script>
+<!-- <script src="demo.js"></script> -->
 <script src="roomSlider.js"></script>
 
+
 <script>
-	
+	window.onload = function(){
+		
+		var a = new RoomSlider('ttt');
+		var b = new RoomSlider('slide');
+
+
+		console.log(document.getElementById('slide').Class)
+
+		
+		
+
+	}
 
 </script>
 

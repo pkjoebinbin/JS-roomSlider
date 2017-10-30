@@ -1,7 +1,8 @@
 window.onload = function(){
 	
-	var room = document.getElementById('room');		//获取第二层
+	
 	var slide = document.getElementById('slide');	//获取第一层
+	var room = slide.getElementsByTagName('div')[0];		//获取第二层
 	var img = room.getElementsByTagName('img');	//获取图片的个数
 	var slideWidth = parseInt(getComputedStyle(slide).width);	//获取slide的宽度
 	var slideHeight = parseInt(getComputedStyle(slide).height);	//获取slide的高度，用来动态居中按钮的位置
@@ -164,7 +165,7 @@ window.onload = function(){
 	var speed = -40;	//动画的速度
 	
 
-	var backSpeed= 200;		//当第一张或最后一张时，相互返回的动画速度
+	
 		
 
 	function nextStart(){
@@ -196,7 +197,8 @@ window.onload = function(){
 
 				}else{
 					if(left < 0){
-						room.style.left = parseInt(room.style.left)+backSpeed+'px';	
+						room.style.left = parseInt(room.style.left)+(-speed*imgIndex)+'px';	
+
 					}else{
 						clearInterval(time);
 						room.style.left = 0+'px';
@@ -227,7 +229,8 @@ window.onload = function(){
 
 				if(imgIndex == 1){
 					if(left > -slideWidth*(img.length-1)){
-						room.style.left = left-backSpeed +'px';
+						room.style.left = left+(speed*img.length) +'px';
+						
 					}else{
 						clearInterval(time);
 						room.style.left = -slideWidth*(img.length-1)+'px';
