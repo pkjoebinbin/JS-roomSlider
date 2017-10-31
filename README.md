@@ -4,9 +4,10 @@
 
 原生JS练手手写了个轻量级的轮播图插件，无第三方依赖，开箱即用，没有过多的繁杂配置。
 <br/>
+<br/>
 
 
-1.引入JS
+<h4>1.引入JS</h4>
 
     <script src="roomSlider.js"></script>
 <br/>
@@ -36,7 +37,7 @@
     </div>
 <br/>
 
-3.JS传入ID。
+<h4>3.JS传入ID。</h4>
 
     var roomSlider = new RoomSlider('slide')
     
