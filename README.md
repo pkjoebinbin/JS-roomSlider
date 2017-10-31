@@ -1,14 +1,13 @@
 ﻿# JS-roomSlider
-原生JS撸的轮播图插件
+**<h3>原生JS撸的轮播图插件</h3>**
 
-----------
+
 原生JS练手手写了个轻量级的轮播图插件，无第三方依赖，开箱即用，没有过多的繁杂配置。
-
-
+<br/>
 **1.引入JS**
 
     <script src="roomSlider.js"></script>
-
+<br/>
 **2.初始化结构。外层div需给定id以及设置宽高，img图片需给定宽高**。
 
     
@@ -33,9 +32,8 @@
             <img src="5.jpg" alt="">
         </div>
     </div>
-
+<br/>
 **3.JS传入ID。**
-
 
     var roomSlider = new RoomSlider('slide')
     
