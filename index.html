@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>轮播图</title>
+	
+</head>
+<style>
+	*{margin:0;padding:0;}
+	
+	
+
+	#slide{
+		
+		width:520px;
+		height:280px;
+		
+	}
+
+
+
+	#ttt{
+		
+		width:520px;
+		height:280px;
+		margin-top:200px;
+		
+	}
+
+
+
+	
+	
+	
+/* 	#prev{
+	font-size:14px;
+	position:absolute;
+	left:0px;
+	top:130px;
+	z-index:2;
+	background:#333;
+	color:#fff;
+	padding:4px;
+	opacity:0.5;
+	border-style:none;
+	outline:none;
+	cursor:pointer;
+	display:none;
+	
+} */
+	
+	
+	/* #next{
+		font-size:14px;
+		position:absolute;
+		right:0px;
+		top:130px;
+		z-index:2;
+		background:#333;
+		color:#fff;
+		padding:4px;
+		opacity:0.5;
+		border-style:none;
+		outline:none;
+		cursor:pointer;
+		display:none;
+		
+		
+	} */
+
+	
+
+
+
+
+
+	
+</style>
+<body>
+<div id="slide" >
+	
+	<div>
+		<img src="1.jpg" id="test" alt="">
+		<img src="2.jpg" alt="">
+		<img src="3.jpg" alt="">
+		<img src="4.jpg" alt="">
+		<img src="5.jpg" alt="">
+		
+	</div>
+
+
+</div>
+
+
+
+<div id="ttt" class="slide">
+	
+	<div  class="room">
+		<img src="1.jpg" id="test" alt="">
+		<img src="2.jpg" alt="">
+		<img src="3.jpg" alt="">
+		<img src="4.jpg" alt="">
+		<img src="5.jpg" alt="">
+		
+	</div>
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+	
+</body>
+<!-- <script src="demo.js"></script> -->
+<script src="roomSlider.js"></script>
+
+
+<script>
+	window.onload = function(){
+		
+		var a = new RoomSlider('ttt');
+		var b = new RoomSlider('slide');
+
+
+		console.log(document.getElementById('slide').Class)
+
+		
+		
+
+	}
+
+</script>
+
+</html>
