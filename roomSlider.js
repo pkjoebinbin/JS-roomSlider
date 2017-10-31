@@ -9,7 +9,7 @@
 		this.slideHeight = parseInt(getComputedStyle(this.slide).height);	//获取slide的高度，用来动态居中按钮的位置
 		
 		this.up = null;		//获取按钮
-		this.down = 1;		//获取按钮
+		this.down = null;		//获取按钮
 		this.navButton = null;	//获取到所有的li
 
 		this.time = null;	//定时器
@@ -21,7 +21,7 @@
 		this.slide.onmouseleave = this.onmouseleave.bind(this);	//按钮绑定事件
 		this.down.onclick = this.nextStart.bind(this);	//按钮绑定事件
 		this.up.onclick = this.prevStart.bind(this);	//按钮绑定事件
-		 this.autoStart = setInterval(this.nextStart.bind(this),3000);	//定时器
+		this.autoStart = setInterval(this.nextStart.bind(this),3000);	//定时器
 
 		
 
@@ -32,11 +32,6 @@
 		}
 		
 
-
-		
-
-
-
 	};
 
 	
@@ -45,7 +40,7 @@
 	//初始化函数
 	RoomSlider.prototype.reset = function(){
 		
-		console.log(1);
+		
 		
 		//初始化需要的样式
 		var createStyle = document.createElement('style');
@@ -66,23 +61,22 @@
 
 		//创建按钮prev
 		var prev = document.createElement('div');	
-		prev.setAttribute('class','prev') ;	
+		
 		prev.innerHTML = '<';
-		prev.setAttribute('class','buttonCss buttonPosition');
+		prev.setAttribute('class','buttonCss buttonPosition prev');
 		prev.style = 'left:0px;';
 		this.slide.appendChild(prev);
-		this.up = document.getElementById('prev');	//获取prev按钮
+		this.up = this.slide.querySelector('.prev');	//获取prev按钮
 
 
 		
 		//创建按钮next
 		var next = document.createElement('div');	
-		next.id ='next';	//给定id
 		next.innerHTML = '>';
-		next.setAttribute('class','buttonCss buttonPosition');
+		next.setAttribute('class','buttonCss buttonPosition next');
 		next.style ='right:0px';
 		this.slide.appendChild(next);
-		this.down = document.getElementById('next');
+		this.down = this.slide.querySelector('.next');
 
 
 
