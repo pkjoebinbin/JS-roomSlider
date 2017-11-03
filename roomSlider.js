@@ -18,7 +18,7 @@
 		this.time = null;	//定时器
 		this.imgIndex = 1;	//获取图片位置
 		this.speed = -(this.slideWidth/10);	//动画速度
-		
+
 		this.resetAllButton();	//初始化设置
 		
 		this.slide.onmouseenter = this.onmouseenter.bind(this);	//按钮绑定事件
@@ -179,7 +179,7 @@
 
 				}else{
 					if(left < 0){
-						_this.room.style.left = parseInt(_this.room.style.left)+(-_this.speed*_this.imgIndex)+'px';	
+						_this.room.style.left = parseInt(_this.room.style.left)+(-_this.speed*2)+'px';	
 
 					}else{
 						clearInterval(_this.time);
@@ -209,7 +209,7 @@
 
 				if(_this.imgIndex == 1){
 					if(left > -_this.slideWidth*(_this.img.length-1)){
-						_this.room.style.left = left+(_this.speed*_this.img.length) +'px';
+						_this.room.style.left = left+(_this.speed*2) +'px';
 						
 					}else{
 						clearInterval(_this.time);
