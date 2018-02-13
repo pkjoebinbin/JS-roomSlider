@@ -3,6 +3,8 @@
 
 
 原生JS练手手写了个轻量级的轮播图插件，无第三方依赖，开箱即用，没有过多的繁杂配置。
+
+<a href="https://pkjoebinbin.github.io/JS-roomSlider/index.html">demo</a>
 <br/>
 <br/>
 
